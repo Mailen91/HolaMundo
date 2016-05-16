@@ -18,11 +18,12 @@ namespace Prueba
 
             string[] xmlfilesBackup = Directory.GetFiles(xmlFolderBackup, @"*.xml");
             string[] xmlfilesResult = Directory.GetFiles(xmlFolderResult, @".xml");
-
+            //prubeaaaaaaaaaaaaaaaaaaaaaa
             foreach (string xml in xmlfilesBackup)
             {
                 string _xmlName = System.IO.Path.GetFileNameWithoutExtension(xml);
                 string _xmlExist = xmlFolderResult + _xmlName + @".xml";
+
                 if (!File.Exists(_xmlExist))
                 {
                     updateStatus(_xmlName, 2);
